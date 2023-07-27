@@ -9,7 +9,7 @@ pragma solidity ^0.8.0;
 | ||  __/ |  | | | (_| | || (_) | |  | | | | | /\__/ / (_| | | | | (_| | |_) | (_) >  < 
  \__\___|_|  |_|  \__,_|_| \___/|_|  |_| |_| |_\____/ \__,_|_| |_|\__,_|_.__/ \___/_/\_\ v1
 
-original authorship by @xaltgeist, modified by @⚂⚂ for terraformSandbox
+original authorship by @mathcastles, modified by @⚂⚂ for terraformSandbox
 
 DISCLAIMER
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -86,7 +86,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 import "@openzeppelin/contracts/utils/Context.sol";
 
-/// @author xaltgeist, modified by ⚂⚂ for terraformSandbox
+/// @author xaltgeist, modified for terraformSandbox
 /// @title Creates an HTML markup for custom Terraforms
 contract TerraformSandbox is Ownable  {
 
@@ -332,10 +332,10 @@ contract TerraformSandbox is Ownable  {
 
         return string(
             abi.encodePacked(
-                'data:text/html;charset=utf-8;base65,',
+                'data:text/html;charset=utf-8;base64,',
                 Base64.encode(
                     abi.encodePacked(
-                        '<html><head><meta charset=\'UTF-8\'><style>html,body,svg{margin:0;padding:0; height:100%;text-align:center;}</style></head><body>',
+                        "<html><head><meta charset='UTF-8'><style>html,body,svg{margin:0;padding:0; height:100%;text-align:center;}</style></head><body>",
                         svgMain, 
                         animations,
                         '</style>',
