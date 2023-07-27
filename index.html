@@ -4,10 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
 		<title>terraformSandbox</title>
 		<style>
-			
 			body {
 				margin: 0;
 				padding: 0;
@@ -18,13 +17,14 @@
 				height: 100vh;
 				background-color: #333;
 			}
-			
-			.button-wrapper {
-			  width: 100%;
-			  height: 100%;
-			  z-index: 10000;
+			.charset {
+				width:20px; 
 			}
-			
+			.button-wrapper {
+				width: 100%;
+				height: 100%;
+				z-index: 10000;
+			}
 			.close {
 				color: #aaa;
 				float: right;
@@ -32,52 +32,40 @@
 				font-weight: bold;
 				cursor: pointer;
 			}
-
 			.close:hover,
 			.close:focus {
 				color: black;
 				text-decoration: none;
 				cursor: pointer;
 			}
-			.charset {
-			  width:20px; 
-			}
-      
-      .export {
-        background-color: #f4f4f4;
-        border: none;
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-			
-			.zoneColors {
-			  width:30px; 
+			.export {
+				background-color: #f4f4f4;
+				border: none;
+				color: black;
+				text-decoration: none;
+				cursor: pointer;
 			}
 			.form-input {
 				display: block;
 				margin-bottom: 15px;
 			}
-
 			.form-input label {
 				display: block;
 				font-weight: bold;
 				margin-bottom: 5px;
 			}
-
 			iframe {
-			  position:fixed;
-			  top:0;
-			  left:0;
-			  bottom:0; 
-			  right:0; 
-			  width:100%; 
-			  height:100%; 
-			  border:none; 
-			  margin:0; 
-			  padding:0; 
+				position:fixed;
+				top:0;
+				left:0;
+				bottom:0; 
+				right:0; 
+				width:100%; 
+				height:100%; 
+				border:none; 
+				margin:0; 
+				padding:0; 
 			}
-			
 			.modal {
 				display: none;
 				position: fixed;
@@ -87,9 +75,7 @@
 				width: 100%;
 				height: 100%;
 				background-color: rgba(0, 0, 0, 0.6);
-				
 			}
-
 			.modal-content {
 				background-color: #f4f4f4;
 				margin: 10% auto;
@@ -99,25 +85,23 @@
 				max-height: 70vh; 
 				border-radius: 3px;
 			}
-      
-      ::-webkit-scrollbar {
-        width: 14px;
-    }
-     
-    ::-webkit-scrollbar-track {
-        border-radius: 3px;
-        border-top-left-radius: 0;
-         border-bottom-left-radius: 0;
-    }
-     
-    ::-webkit-scrollbar-thumb {
-        border-radius: 3px;
-        border-top-left-radius: 0;
-         border-bottom-left-radius: 0;
-        background: #aaa; 
-    }
-   
-
+			.zoneColors {
+				width:30px; 
+			}
+			::-webkit-scrollbar {
+				width: 14px;
+			}
+			::-webkit-scrollbar-track {
+				border-radius: 3px;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+			::-webkit-scrollbar-thumb {
+				border-radius: 3px;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				background: #aaa; 
+			}
 		</style>
 	</head>
 	<body>
@@ -127,70 +111,69 @@
 				<span class="close" onclick="closeModal()">&times;</span>
 				<h2>[terraform sandbox]</h2>
 				<form id="myForm">
-					<div class="form-input">
-						<label>antenna:</label>
-						<input type="number" class="antenna" value="0" disabled>
-					</div>
-					<div class="form-input">
-						<label>status:</label>
-						<input type="number" class="status"  min='0' max='4' onchange='configDream()' required>
-					</div>
-					<div class="form-input">
-						<label>resourceLvl:</label>
-						<input type="number" class="resourceLvl" onchange='configDream()' required>
-					</div>
-					<div class="form-input">
-						<label>seed:</label>
-						<input type="number" class="seed"  min='0' max='10000' onchange='configDream()' required>
-					</div>
-					<div class="form-input">
-						<label>zoneColors:</label>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>
-						<input type="color" class="zoneColors" onchange='configDream()'>  
-					</div>
-					<div class="form-input">
-						<label>canvas:</label>
-						<input type="text" class="canvas" required>
-					</div>
-					<div class="form-input">
-						<label>charset:</label>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-						<input type="text" class="charset" onchange='configDream()' required>
-					</div>
-					<div class="form-input">
-						<label>font:</label>
-						<input type="number" class="font" min='0' max='13' onchange='configDream()' required >
-					</div>
-					<div class="form-input">
-						<label>fontSize:</label>
-						<input type="number" class="fontSize" onchange='configDream()' required>
-					</div>
-					<div class="form-input">
-						<label>placement:</label>
-						<input type="number" class="placement" onchange='configDream()' required>
-					</div>
-					<div class="form-input">
-						<label>altColors:</label>
-						<input type="color" class="altColors" onchange='configDream()'>
-						<input type="color" class="altColors" onchange='configDream()'>        
-					</div>
-					
-				</form>
+				<div class="form-input">
+					<label>antenna:</label>
+					<input type="number" class="antenna" value="0" disabled>
+				</div>
+				<div class="form-input">
+					<label>status:</label>
+					<input type="number" class="status"  min='0' max='4' onchange='configDream()' required>
+				</div>
+				<div class="form-input">
+					<label>resourceLvl:</label>
+					<input type="number" class="resourceLvl" onchange='configDream()' required>
+				</div>
+				<div class="form-input">
+					<label>seed:</label>
+					<input type="number" class="seed"  min='0' max='10000' onchange='configDream()' required>
+				</div>
+				<div class="form-input">
+					<label>zoneColors:</label>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>
+					<input type="color" class="zoneColors" onchange='configDream()'>  
+				</div>
+				<div class="form-input">
+					<label>canvas:</label>
+					<input type="text" class="canvas" required>
+				</div>
+				<div class="form-input">
+					<label>charset:</label>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+					<input type="text" class="charset" onchange='configDream()' required>
+				</div>
+				<div class="form-input">
+					<label>font:</label>
+					<input type="number" class="font" min='0' max='13' onchange='configDream()' required >
+				</div>
+				<div class="form-input">
+					<label>fontSize:</label>
+					<input type="number" class="fontSize" onchange='configDream()' required>
+				</div>
+				<div class="form-input">
+					<label>placement:</label>
+					<input type="number" class="placement" onchange='configDream()' required>
+				</div>
+				<div class="form-input">
+					<label>altColors:</label>
+					<input type="color" class="altColors" onchange='configDream()'>
+					<input type="color" class="altColors" onchange='configDream()'>        
+				</div>
+			</form>
 			</div>
 		</div>
 		<div class="view-wrapper" onclick="openModal()">
