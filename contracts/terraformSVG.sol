@@ -9,7 +9,7 @@ pragma solidity ^0.8.0;
 | ||  __/ |  | | | (_| | || (_) | |  | | | | | /\__/ /\ \_/ / |_\ \
  \__\___|_|  |_|  \__,_|_| \___/|_|  |_| |_| |_\____/  \___/ \____/  v1
 
-authored by @xaltgeist, modified by ⚂⚂ for terraformSandbox 
+authored by @xaltgeist, modified by @⚂⚂ for terraformSandbox 
 
 DISCLAIMER
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
