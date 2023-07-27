@@ -9,7 +9,7 @@ pragma solidity ^0.8.0;
 | ||  __/ |  | | | (_| | || (_) | |  | | | | | /\__/ /\ \_/ / |_\ \
  \__\___|_|  |_|  \__,_|_| \___/|_|  |_| |_| |_\____/  \___/ \____/  v1
 
-authored by @mathcastles, modified by ⚂⚂ for terraformSandbox 
+authored by @xaltgeist, modified by ⚂⚂ for terraformSandbox 
 
 DISCLAIMER
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -54,8 +54,7 @@ interface ITerraformsCharacters {
     function font(uint) external view returns (string memory);
 }
 
-
-/// @author xaltgeist, modified for terraformSandbox 
+/// @author xaltgeist, modified by ⚂⚂ for terraformSandbox
 /// @title Creates a string for generating Terraforms 
 contract TerraformSVG is Ownable {
 
@@ -115,7 +114,6 @@ contract TerraformSVG is Ownable {
     constructor (address _terraformsCharactersAddress) Ownable() {
         terraformsCharactersAddress = _terraformsCharactersAddress;
     }
-
 
     /// @notice Returns the dream SVG
     /// @param p is a SVGParams struct passed from terraformSandbox
