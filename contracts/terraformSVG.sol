@@ -9,7 +9,7 @@ pragma solidity ^0.8.0;
 | ||  __/ |  | | | (_| | || (_) | |  | | | | | /\__/ /\ \_/ / |_\ \
  \__\___|_|  |_|  \__,_|_| \___/|_|  |_| |_| |_\____/  \___/ \____/  v1
 
-authored by @xaltgeist, modified by @⚂⚂ for terraformSandbox 
+authored by @mathcastles, modified by @⚂⚂ for terraformSandbox 
 
 DISCLAIMER
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -27,6 +27,7 @@ library ToString {
     function toString(uint256 value) internal pure returns (string memory) {
         // Inspired by OraclizeAPI's implementation - MIT license
         // https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol
+
         if (value == 0) {
             return "0";
         }
@@ -53,7 +54,8 @@ interface ITerraformsCharacters {
     function font(uint) external view returns (string memory);
 }
 
-/// @author xaltgeist, modified by ⚂⚂ for terraformSandbox
+
+/// @author xaltgeist, modified for terraformSandbox 
 /// @title Creates a string for generating Terraforms 
 contract TerraformSVG is Ownable {
 
@@ -138,7 +140,7 @@ contract TerraformSVG is Ownable {
         string memory svgHeader = string(
             abi.encodePacked(
                 "<svg version='2.0' encoding='utf-8' viewBox='0 0 388 560' preserveAspectRatio='xMidYMid' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'><style>@font-face {font-family:'MathcastlesRemix-Regular';font-display:block;src:url(data:application/font-woff2;charset=utf-8;base64,",
-                ITerraformsCharacters(terraformsCharactersAddress).font(p.font),
+                /*ITerraformsCharacters(terraformsCharactersAddress).font(p.font),*/
                 ") format('woff');}.meta{width:388px;height:560px;}.r{box-sizing: border-box;width:388px;height:560px;padding:24px;font-size:",
                 ToString.toString(p.fontSize),
                  "px; display:grid;grid-template-columns:repeat(32, 3%);grid-template-rows: repeat(32, 16px);grid-gap: 0px;justify-content: space-between;}p{font-family:'MathcastlesRemix-Regular',monospace;margin:0;text-align: center;display:flex;justify-content:center;align-items:center;}",
@@ -146,9 +148,7 @@ contract TerraformSVG is Ownable {
                  "</style><foreignObject x='0' y='0' width='388' height='560'><div class='meta' xmlns='http://www.w3.org/1999/xhtml'><div class='r'>"
             )
         );
-
         uint col;
-
         // Assemble rows of SVG       
         for (uint row; row < 32; row++) {          
             // Step through uint[32][32] of indices into char array
@@ -187,7 +187,6 @@ contract TerraformSVG is Ownable {
                     )
                 );
             }
-
     	    // Compile the last few columns into the row buffer
             ctx.rowBuf[row] = string(
                 abi.encodePacked(
@@ -230,7 +229,6 @@ contract TerraformSVG is Ownable {
                 '</div></div></foreignObject><style>body, svg{overflow-x:hidden; overflow-y: hidden; margin:0; padding:0}'
             )
         );
-
         // Generate CSS animation, keyframes and JavaScript
         animations = generateAnimations(a, p.zoneColors);
         script = generateScript(p);
