@@ -84,7 +84,7 @@ function randomDream() {
 	document.querySelector(".status").value = status;
 	document.querySelector(".resourceLvl").value = resourceLvl;
 	document.querySelector(".seed").value = seed;
-	document.querySelector(".canvas").value = canvas;
+	document.querySelector(".canvas").value = canvas_;
 	document.querySelector(".font").value = font;
 	document.querySelector(".fontSize").value = fontSize;
 	document.querySelector(".placement").value = placement;
