@@ -17,14 +17,15 @@ window.oncontextmenu = function () {
 }
 
 async function callDream(a, b, c, d, e, f, g, h, i, j, k) {
-	var web3 = new Web3("https://eth-mainnet.g.alchemy.com/v2/[ENTERKEY]");
+	var web3 = new Web3("https://eth-mainnet.g.alchemy.com/v2/[****ENTERKEY****]");
 	const abi = [{"inputs":[{"internalType":"address","name":"newAntenna","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[{"internalType":"address","name":"newAntenna","type":"address"}],"name":"addAntenna","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"animationParameters","outputs":[{"components":[{"internalType":"enum ITerraformSVG.Activation","name":"activation","type":"uint8"},{"internalType":"uint256","name":"classesAnimated","type":"uint256"},{"internalType":"uint256","name":"duration","type":"uint256"},{"internalType":"uint256","name":"durationInc","type":"uint256"},{"internalType":"uint256","name":"delay","type":"uint256"},{"internalType":"uint256","name":"delayInc","type":"uint256"},{"internalType":"uint256","name":"bgDuration","type":"uint256"},{"internalType":"uint256","name":"bgDelay","type":"uint256"},{"internalType":"string","name":"easing","type":"string"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"internalType":"struct ITerraformSVG.AnimParams","name":"a","type":"tuple"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"antennaAddresses","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"antenna","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"dreamHTML","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"antenna","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"dreamIMG","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"antenna","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"dreamSVG","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"},{"internalType":"address","name":"newAntenna","type":"address"}],"name":"editAntenna","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"}],"name":"svgParameters","outputs":[{"components":[{"internalType":"uint256[32][32]","name":"heightmapIndices","type":"uint256[32][32]"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"string[9]","name":"chars","type":"string[9]"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"}],"internalType":"struct ITerraformSVG.SVGParams","name":"p","type":"tuple"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}];
-	const address = '[ENTERADDRESS]';
+	const address = '[****ENTERADDRESS****]';
 	var contract = new web3.eth.Contract(abi, address);
 	// using the promise
 	contract.methods.dreamSVG(a,b,c,d,e,f,g,h,i,j,k).call({from: '0x0000000000000000000000000000000000000000'})
 	.then(function(result){
 		document.getElementById('view').src = result;
+    document.getElementById('exportHTML').innerHTML = result;
 	});
 }
 
@@ -246,4 +247,99 @@ function configDream(){
 		String(a1.value)
 	];
 	callDream(antenna, status, resourceLvl, seed, zColors, canvas, char, font, fontSize, placement, aColors);
+}
+
+function base64EncodeUnicode(str) {
+  const encoder = new TextEncoder();
+  const bytes = encoder.encode(str);
+  let base64String = '';
+  for (let i = 0; i < bytes.length; i++) {
+    base64String += String.fromCharCode(bytes[i]);
+  }
+  return btoa(base64String);
+}
+
+function openJSONInNewWindow(base64Data) {
+  const jsonData = atob(base64Data);
+  const blob = new Blob([jsonData], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  window.open(url, '_blank');
+
+}
+
+function exportData() {
+	const antenna = document.getElementsByClassName("antenna")[0].value;
+	const status = document.getElementsByClassName("status")[0].value;
+	const resourceLvl = document.getElementsByClassName("resourceLvl")[0].value;
+	const seed = document.getElementsByClassName("seed")[0].value;
+	const z0 = document.getElementsByClassName("zoneColors")[0];
+	const z1 = document.getElementsByClassName("zoneColors")[1];
+	const z2 = document.getElementsByClassName("zoneColors")[2];
+	const z3 = document.getElementsByClassName("zoneColors")[3];
+	const z4 = document.getElementsByClassName("zoneColors")[4];
+	const z5 = document.getElementsByClassName("zoneColors")[5];
+	const z6 = document.getElementsByClassName("zoneColors")[6];
+	const z7 = document.getElementsByClassName("zoneColors")[7];
+	const z8 = document.getElementsByClassName("zoneColors")[8];
+	const z9 = document.getElementsByClassName("zoneColors")[9];
+	const zColors = [
+		String(z0.value),
+		String(z1.value),
+		String(z2.value),
+		String(z3.value),
+		String(z4.value),
+		String(z5.value),
+		String(z6.value),
+		String(z7.value),
+		String(z8.value),
+		String(z9.value)
+	];
+	var canvas_ = document.getElementsByClassName("canvas")[0].value;
+	const canvas = canvas_.slice(1, -1).split(',').map(item => item.trim());
+	const c0 = document.getElementsByClassName("charset")[0];
+	const c1 = document.getElementsByClassName("charset")[1];
+	const c2 = document.getElementsByClassName("charset")[2];
+	const c3 = document.getElementsByClassName("charset")[3];
+	const c4 = document.getElementsByClassName("charset")[4];
+	const c5 = document.getElementsByClassName("charset")[5];
+	const c6 = document.getElementsByClassName("charset")[6];
+	const c7 = document.getElementsByClassName("charset")[7];
+	const c8 = document.getElementsByClassName("charset")[8];
+	const char = [
+		String(c0.value),
+		String(c1.value),
+		String(c2.value),
+		String(c3.value),
+		String(c4.value),
+		String(c5.value),
+		String(c6.value),
+		String(c7.value),
+		String(c8.value)
+	];
+	const font = document.getElementsByClassName("font")[0].value;
+	const fontSize = document.getElementsByClassName("fontSize")[0].value;
+	const placement = document.getElementsByClassName("placement")[0].value;
+	const a0 = document.getElementsByClassName("altColors")[0];
+	const a1 = document.getElementsByClassName("altColors")[1];
+	const aColors = [
+		String(a0.value),
+		String(a1.value)
+	];
+  const html = document.getElementById("exportHTML").innerHTML;
+  var obj = {
+  antenna:  antenna, 
+  status: status,
+  resourceLvl: resourceLvl,
+  seed: seed,
+  zoneColors: zColors,
+  canvas: canvas,
+  charset: char,
+  font: font,
+  fontSize: fontSize,
+  placement: placement,
+  altColors: aColors,
+  html: html
+  };
+  const base64Data = base64EncodeUnicode(JSON.stringify(obj));
+	openJSONInNewWindow(base64Data);
 }
