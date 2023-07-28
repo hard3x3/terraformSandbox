@@ -1,5 +1,5 @@
 # terraformSandbox
 
-made by ⚂⚂
+made by @hard3x3
 
 ipfs: 
