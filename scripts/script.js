@@ -17,15 +17,15 @@ window.oncontextmenu = function () {
 }
 
 async function callDream(a, b, c, d, e, f, g, h, i, j, k) {
-	var web3 = new Web3("https://eth-mainnet.g.alchemy.com/v2/[****ENTERKEY****]");
+	var web3 = new Web3("https://eth-mainnet.g.alchemy.com/v2/[ENTERKEY]");
 	const abi = [{"inputs":[{"internalType":"address","name":"newAntenna","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[{"internalType":"address","name":"newAntenna","type":"address"}],"name":"addAntenna","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"animationParameters","outputs":[{"components":[{"internalType":"enum ITerraformSVG.Activation","name":"activation","type":"uint8"},{"internalType":"uint256","name":"classesAnimated","type":"uint256"},{"internalType":"uint256","name":"duration","type":"uint256"},{"internalType":"uint256","name":"durationInc","type":"uint256"},{"internalType":"uint256","name":"delay","type":"uint256"},{"internalType":"uint256","name":"delayInc","type":"uint256"},{"internalType":"uint256","name":"bgDuration","type":"uint256"},{"internalType":"uint256","name":"bgDelay","type":"uint256"},{"internalType":"string","name":"easing","type":"string"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"internalType":"struct ITerraformSVG.AnimParams","name":"a","type":"tuple"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"antennaAddresses","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"antenna","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"dreamHTML","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"antenna","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"dreamIMG","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"antenna","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"uint256","name":"placement","type":"uint256"},{"internalType":"string[2]","name":"altColors","type":"string[2]"}],"name":"dreamSVG","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"},{"internalType":"address","name":"newAntenna","type":"address"}],"name":"editAntenna","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"},{"internalType":"uint256[]","name":"canvas","type":"uint256[]"},{"internalType":"string[9]","name":"charset","type":"string[9]"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"}],"name":"svgParameters","outputs":[{"components":[{"internalType":"uint256[32][32]","name":"heightmapIndices","type":"uint256[32][32]"},{"internalType":"uint256","name":"seed","type":"uint256"},{"internalType":"uint256","name":"resourceLvl","type":"uint256"},{"internalType":"uint256","name":"status","type":"uint256"},{"internalType":"uint256","name":"font","type":"uint256"},{"internalType":"uint256","name":"fontSize","type":"uint256"},{"internalType":"string[9]","name":"chars","type":"string[9]"},{"internalType":"string[10]","name":"zoneColors","type":"string[10]"}],"internalType":"struct ITerraformSVG.SVGParams","name":"p","type":"tuple"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}];
-	const address = '[****ENTERADDRESS****]';
+	const address = '[ENTERADDRESS]';
 	var contract = new web3.eth.Contract(abi, address);
 	// using the promise
 	contract.methods.dreamSVG(a,b,c,d,e,f,g,h,i,j,k).call({from: '0x0000000000000000000000000000000000000000'})
 	.then(function(result){
 		document.getElementById('view').src = result;
-    document.getElementById('exportHTML').innerHTML = result;
+    document.getElementById('exportSVG').innerHTML = result;
 	});
 }
 
@@ -261,10 +261,13 @@ function base64EncodeUnicode(str) {
 
 function openJSONInNewWindow(base64Data) {
   const jsonData = atob(base64Data);
-  const blob = new Blob([jsonData], { type: 'application/json' });
+  const utf8Array = new Uint8Array(jsonData.length);
+  for (let i = 0; i < jsonData.length; i++) {
+    utf8Array[i] = jsonData.charCodeAt(i);
+  }
+  const blob = new Blob([utf8Array], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   window.open(url, '_blank');
-
 }
 
 function exportData() {
@@ -325,7 +328,7 @@ function exportData() {
 		String(a0.value),
 		String(a1.value)
 	];
-  const html = document.getElementById("exportHTML").innerHTML;
+  const svg = document.getElementById("exportSVG").innerHTML;
   var obj = {
   antenna:  antenna, 
   status: status,
@@ -338,7 +341,7 @@ function exportData() {
   fontSize: fontSize,
   placement: placement,
   altColors: aColors,
-  html: html
+  svg: svg
   };
   const base64Data = base64EncodeUnicode(JSON.stringify(obj));
 	openJSONInNewWindow(base64Data);
