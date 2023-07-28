@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
-		<link rel="stylesheet" href="./styles/style.css">
 		<title>terraformSandbox</title>
 	</head>
 	<body>
@@ -77,12 +76,13 @@
 					<input type="color" class="altColors" onchange='configDream()'>
 					<input type="color" class="altColors" onchange='configDream()'>        
 				</div>
+        <input type='button' value='[export]' class='export' onclick='exportData()'>
 			</form>
 			</div>
 		</div>
 		<div class="view-wrapper" onclick="openModal()">
 			<iframe id='view'></iframe> 
+      		<div id='exportHTML'></div>
 		</div>
-		<script src="./scripts/encodedScript.js"></script>
 	</body>
 </html>
