@@ -29,6 +29,13 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+.export {
+    background: #f4f4f4;
+    border: none;
+}
+#exportHTML {
+    display:none;
+}
 .form-input {
     display: block;
     margin-bottom: 15px;
@@ -87,3 +94,4 @@ iframe {
     border-bottom-left-radius: 0;
     background: #aaa; 
 }
+
