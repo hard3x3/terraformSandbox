@@ -9,7 +9,7 @@ pragma solidity ^0.8.0;
 | ||  __/ |  | | | (_| | || (_) | |  | | | | | /\__/ /\ \_/ / |_\ \
  \__\___|_|  |_|  \__,_|_| \___/|_|  |_| |_| |_\____/  \___/ \____/  v1
 
-authored by @mathcastles, modified by @⚂⚂ for terraformSandbox 
+authored by @mathcastles, modified by @hard3x3 for terraformSandbox 
 
 DISCLAIMER
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -116,6 +116,7 @@ contract TerraformSVG is Ownable {
         terraformsCharactersAddress = _terraformsCharactersAddress;
     }
 
+
     /// @notice Returns the dream SVG
     /// @param p is a SVGParams struct passed from terraformSandbox
     /// @param a is an AnimParams struct passed from terraformSandbox
@@ -140,7 +141,7 @@ contract TerraformSVG is Ownable {
         string memory svgHeader = string(
             abi.encodePacked(
                 "<svg version='2.0' encoding='utf-8' viewBox='0 0 388 560' preserveAspectRatio='xMidYMid' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'><style>@font-face {font-family:'MathcastlesRemix-Regular';font-display:block;src:url(data:application/font-woff2;charset=utf-8;base64,",
-                /*ITerraformsCharacters(terraformsCharactersAddress).font(p.font),*/
+                ITerraformsCharacters(terraformsCharactersAddress).font(p.font),
                 ") format('woff');}.meta{width:388px;height:560px;}.r{box-sizing: border-box;width:388px;height:560px;padding:24px;font-size:",
                 ToString.toString(p.fontSize),
                  "px; display:grid;grid-template-columns:repeat(32, 3%);grid-template-rows: repeat(32, 16px);grid-gap: 0px;justify-content: space-between;}p{font-family:'MathcastlesRemix-Regular',monospace;margin:0;text-align: center;display:flex;justify-content:center;align-items:center;}",
