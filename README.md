@@ -1,3 +1,3 @@
 # terraformSandbox
 
-made by @⚂⚂
+made by ⚂⚂
