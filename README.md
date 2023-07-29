@@ -1,7 +1,5 @@
 # terraformSandbox
 
-made by @hard3x3
-
 arweave://efJuRS9sxBHNXdsTk5eBT0m2mu7iITbJtdwDXnACKeI
 
 terraformSVG: 0x49e0872d6b0758f70c86b29fce306aad66b3e391
