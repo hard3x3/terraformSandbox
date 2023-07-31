@@ -12,6 +12,12 @@ body {
     width: 100%;
     height: 100%;
     z-index: 10000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .charset {
     width:20px; 
@@ -30,11 +36,13 @@ body {
     cursor: pointer;
 }
 #exportSVG {
-display:none;
+    display:none;
 }
 .export {
-background: #f4f4f4;
-border: none;
+    background: #f4f4f4;
+    border: none;
+    width: 100%;
+    text-align: right;
 }
 .form-input {
     display: block;
