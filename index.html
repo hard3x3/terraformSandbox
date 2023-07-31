@@ -20,6 +20,12 @@
 				width: 100%;
 				height: 100%;
 				z-index: 10000;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
 			}
 			.charset {
 				width:20px; 
@@ -37,13 +43,15 @@
 				text-decoration: none;
 				cursor: pointer;
 			}
-      #exportSVG {
-        display:none;
-      }
-      .export {
-        background: #f4f4f4;
-        border: none;
-      }
+			#exportSVG {
+				display:none;
+			}
+			.export {
+				background: #f4f4f4;
+				border: none;
+				width: 100%;
+				text-align: right;
+			}
 			.form-input {
 				display: block;
 				margin-bottom: 15px;
@@ -105,11 +113,11 @@
 		</style>
 	</head>
 	<body>
-		<div class="button-wrapper" onclick="randomDream()" oncontextmenu="openModal()"></div>
+		<div class="button-wrapper" onclick="randomDream()" oncontextmenu="openModal()" ondblclick='openModal()'></div>
 		<div id="myModal" class="modal">
 			<div class="modal-content">
 				<span class="close" onclick="closeModal()">&times;</span>
-				<h2>[terraform sandbox]</h2>
+				<h2>▚ ⍝ ⩎ ▟ ▙ ◍ ✗</h2>
 				<form id="myForm">
 				<div class="form-input">
 					<label>antenna:</label>
