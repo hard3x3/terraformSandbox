@@ -21,3 +21,9 @@ arweave: [AihZmVjdtFhnyjkrejfhN2Ve1FUp505RegoVx75fN6I](https://aiuftgky3w2fqz6kh
 terraformSVG: [0x49e0872d6b0758f70c86b29fce306aad66b3e391](https://etherscan.io/address/0x49e0872d6b0758f70c86b29fce306aad66b3e391#code)
 
 terraformSandbox: [0x0ffe9697c852cbbb35e4eef49cbc948daf855d63](https://etherscan.io/address/0x0ffe9697c852cbbb35e4eef49cbc948daf855d63#code)
+
+## Attribution
+This project would not have been made possible without the incredible talents of multiple other community members, including without limitation:
+* @113
+* @xaltgeist
+* el_rayne
