@@ -26,4 +26,4 @@ terraformSandbox: [0x0ffe9697c852cbbb35e4eef49cbc948daf855d63](https://etherscan
 This project would not have been made possible without the incredible talents of multiple other community members, including without limitation:
 * @113
 * @xaltgeist
-* el_rayne
+* @el_rayne
