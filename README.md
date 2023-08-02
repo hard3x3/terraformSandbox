@@ -1,5 +1,6 @@
 # ▚ ⍝ ⩎ ▟ ▙ ◍ ✗
-Terraform Sandbox (i.e. ▚ ⍝ ⩎ ▟ ▙ ◍ ✗) is a digital playground for artists, creators, and enthusiasts to continue their exploration and education of terraforms by @mathcastles. 
+
+Sandbox is a digital playground for artists, creators, and enthusiasts to continue their exploration of terraforms by @mathcastles. 
 
 ar://AihZmVjdtFhnyjkrejfhN2Ve1FUp505RegoVx75fN6I
 
