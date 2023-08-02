@@ -19,13 +19,15 @@ Terraform implementations within the terraformSandbox are contract specific and 
 
 ### Status [uint256]
 Status set the mode of the terraform parcels, which include:
-* 0: Terrain
-* 1: Daydream
-* 2: Terraform
-* 3: Origin Daydream
+* Terrain: "0"
+* Daydream: "1"
+* Terraform: "2"
+* Origin Daydream: "3"
 
 ### ResourceLvl [uint256]
-Labeled ?????, the resource level describes the overall stability and movement of the parcel. Lower numbers will result in a more static animation, while higher numbers may animate the entire grid. Recommended range: 4000 - 60000.
+The resource level modifies the animation of cycling characters. Lower numbers will result in a more static parcel, while higher numbers cycle characters across the entire grid. 
+
+Recommended range: 4000 - 60000.
 
 ### Seed [uint256]
 
