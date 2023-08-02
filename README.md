@@ -1,7 +1,18 @@
 # ▚ ⍝ ⩎ ▟ ▙ ◍ ✗
 
-Sandbox is a digital playground for artists, creators, and enthusiasts to continue their exploration of terraforms by @mathcastles. 
+Sandbox is a digital playground for artists, creators, and enthusiasts to build new concepts and continue exploring terraforms by @mathcastles.  Users can use the provided front end (via arweave) or call from the terraformSandbox contract a custom terraform based on the parameters specified below:
 
+* Antenna
+* Status
+* ResourceLvl
+* Seed
+* ZoneColors
+* Canvas
+* Charset
+* Font
+* FontSize
+* Placement
+* AltColors
 
 ## Addresses
 
