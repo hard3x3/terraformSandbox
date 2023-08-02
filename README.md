@@ -1,6 +1,6 @@
 # ▚ ⍝ ⩎ ▟ ▙ ◍ ✗
 
-Sandbox is a digital playground for artists, creators, and enthusiasts to continue exploring [terraforms by mathcastles](https://terraformexplorer.xyz/).  Users can use this tool to create custom base64 encoded <html>, <svg>, and <img> terraform parcels by entering the applicable parameters via a front end (i.e. arweave) or calling the terraformSandbox contract directly. Parameters include:
+Sandbox is a digital playground for artists, creators, and enthusiasts to continue exploring [terraforms by mathcastles](https://terraformexplorer.xyz/).  This tool creates custom base64 encoded <html>, <svg>, and <img> terraform parcels when a user enters the applicable parameters via a front end (i.e. arweave) or calling the terraformSandbox contract directly. Relevant parameters include:
 
 * Antenna
 * Status
