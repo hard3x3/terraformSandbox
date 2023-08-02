@@ -15,7 +15,19 @@ Sandbox is a digital playground for artists, creators, and enthusiasts to contin
 * AltColors
 
 ### Antenna [uint256]
+Terraform implementations within the terraformSandbox are contract specific and each address is stored in the antennaAddresses[] array. Calling "0" will provide the original implementation. Future antennas released by @mathcastles may, upon their permission, be added.
 
+### Status [uint256]
+Status set the mode of the terraform parcels, which include:
+* 0: Terrain
+* 1: Daydream
+* 2: Terraform
+* 3: Origin Daydream
+
+### ResourceLvl [uint256]
+Labeled ?????, the resource level describes the overall stability and movement of the parcel. Lower numbers will result in a more static animation, while higher numbers may animate the entire grid. Recommended range: 4000 - 60000.
+
+### Seed [uint256]
 
 ## Addresses
 
