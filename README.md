@@ -40,7 +40,7 @@ terraformSVG: [0x49e0872d6b0758f70c86b29fce306aad66b3e391](https://etherscan.io/
 terraformSandbox: [0x0ffe9697c852cbbb35e4eef49cbc948daf855d63](https://etherscan.io/address/0x0ffe9697c852cbbb35e4eef49cbc948daf855d63#code)
 
 ## Attribution
-This project would not have been possible without the incredible talents of others, including without limitation:
+This project is a visualization tool based on the immense talent and work of @mathcastles. Terraform Sandbox is not an original work and nor would it have been possible to build without the talent of others, including without limitation:
 * @113
 * @xaltgeist
 * @el_rayne
