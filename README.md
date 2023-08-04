@@ -38,7 +38,7 @@ terraformSVG: [0x49e0872d6b0758f70c86b29fce306aad66b3e391](https://etherscan.io/
 terraformSandbox: [0x0ffe9697c852cbbb35e4eef49cbc948daf855d63](https://etherscan.io/address/0x0ffe9697c852cbbb35e4eef49cbc948daf855d63#code)
 
 ## Attribution
-Terraform Sandbox is not an original work, rather it is a visualization tool based on the immense talent and work of @mathcastles and others, including without limitation:
+Terraform Sandbox is not an original work, rather it is a visualization tool of terraforms based on the immense talent of @mathcastles and others, including without limitation:
 
 * @113
 * @xaltgeist
