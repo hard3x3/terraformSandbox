@@ -29,8 +29,6 @@ The resource level modifies the animation of cycling characters. Lower numbers w
 
 Recommended range: 4000 - 60000.
 
-### Seed [uint256]
-
 ## Addresses
 
 arweave: [AihZmVjdtFhnyjkrejfhN2Ve1FUp505RegoVx75fN6I](https://aiuftgky3w2fqz6khevxun7bg5sv5vcvfhtu4ul2bik4pps7g6ra.arweave.net/AihZmVjdtFhnyjkrejfhN2Ve1FUp505RegoVx75fN6I)
