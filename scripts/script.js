@@ -25,7 +25,7 @@ async function callDream(a, b, c, d, e, f, g, h, i, j, k) {
 	contract.methods.dreamSVG(a,b,c,d,e,f,g,h,i,j,k).call({from: '0x0000000000000000000000000000000000000000'})
 	.then(function(result){
 		document.getElementById('view').src = result;
-    document.getElementById('exportSVG').innerHTML = result;
+    		document.getElementById('exportSVG').innerHTML = result;
 	});
 }
 
