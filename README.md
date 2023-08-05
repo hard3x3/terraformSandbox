@@ -34,7 +34,7 @@ The seed has multiple purposes determining the animation distortion, speed of pa
 * 5000 < 6500: small distortion with greater speed in daydream/terraform status
 * 6500 > 9950: large distortion with slower speed in daydream/terraform status
 * 9500 > 9970: (y) seeds
-* > 9970: (x) seeds
+* 9970 < 10000: (x) seeds
 
 ### ZoneColors [string[10]]
 Zone colors are an array of ten (10) strings and should be CSS hex values (i.e. "#ffffff"), where the first 9 colors align to characters and the 10th is the parcel background.
