@@ -26,7 +26,18 @@ Status set the mode of the terraform parcels, which include:
 ### ResourceLvl [uint256]
 The resource level modifies the animation of cycling characters. Lower numbers will result in a more static parcel, while higher numbers cycle characters across the entire grid. 
 
-Recommended range: 4000 - 60000.
+Recommended range: "4000" - "60000".
+
+### Seed [uint256]
+The seed has multiple purposes determining the animation distortion, speed of parcels, chroma, and character set. 
+* < 5000: less distortion in daydream/terraform status
+* 5000 < 6500: small distortion with greater speed in daydream/terraform status
+* 6500 > 9950: large distortion with slower speed in daydream/terraform status
+* 9500 >9970: (y) seeds
+* >9970: (x) seeds
+
+### ZoneColors [string[10]
+Zone colors are an array of ten (10) strings and should be CSS hex values (i.e. "#ffffff"), where the first 9 colors align to characters and the 10th is the parcel background.
 
 ## Addresses
 
