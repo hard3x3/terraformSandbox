@@ -30,14 +30,26 @@ Recommended range: "4000" - "60000".
 
 ### Seed [uint256]
 The seed has multiple purposes determining the animation distortion, speed of parcels, chroma, and character set. 
-* < 5000: less distortion in daydream/terraform status
-* 5000 < 6500: small distortion with greater speed in daydream/terraform status
-* 6500 > 9950: large distortion with slower speed in daydream/terraform status
+* 0 < 5000: less distortion when terraformed
+* 5000 < 6500: small distortion with greater speed when terraformed
+* 6500 > 9950: large distortion with slower speed when terraformed
 * 9500 > 9970: (y) seeds
 * 9970 < 10000: (x) seeds
 
 ### ZoneColors [string[10]]
-Zone colors are an array of ten (10) strings and should be CSS hex values (i.e. "#ffffff"), where the first 9 colors align to characters and the 10th is the parcel background.
+Zone colors are an array of ten (10) strings as CSS hex values (i.e. "#ffffff"), where the first 9 colors align to characters and the 10th is the parcel background.
+
+### Canvas [uint256[]]
+Also known as a height map, this is an array consisting of 16 values containing a number of 64 digits in length. You can export an example of a canvas from [enter dream](www.enterdream.xyz).
+
+### Charset [string[9]]
+The character set is an array of nine (9) strings with a single character.
+
+### Font [uint256]
+The font pulled from the original terraform character address. Must be values between 0 and 16.
+
+### FontSize [uint256]
+The size of the characters in px.
 
 ## Addresses
 
