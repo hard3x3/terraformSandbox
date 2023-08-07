@@ -43,13 +43,25 @@ Zone colors are an array of ten (10) strings as CSS hex values (i.e. "#ffffff"),
 Also known as a height map, this is an array consisting of 16 values containing a number of 64 digits in length. You can export an example of a canvas from [enter dream](www.enterdream.xyz).
 
 ### Charset [string[9]]
-The character set is an array of nine (9) strings with a single character.
+The character set is an array of nine (9) strings each containing a single character that appear on the parcel.
 
 ### Font [uint256]
-The font pulled from the original terraform character address. Must be values between 0 and 16.
+The font pulled from the original terraform character address. Must be values between "0" and "16".
 
 ### FontSize [uint256]
-The size of the characters in px.
+The size of the characters in pixels. Recommended font size is between "16"-"24".
+
+### Placement [uint256]
+Placement is used in the Terraform Sandbox to determine chroma.^
+* 0 < 3333: Flow
+* 3333 < 6666: Hyper
+* 6666 > 10000: Pulse
+* Plagues can only be simulated when a hash value of the placement, string, and a nonce are greater than 0.9990.
+
+^In the original terraforms contract, placement has additional purposes, including the location of a parcel within the hypercastle.
+
+### AltColors [string[2]
+Alternative colors are an array of two (2) strings as CSS hex values (i.e. "#ffffff"), which provide additional color animation for plague parcels.
 
 ## Addresses
 
