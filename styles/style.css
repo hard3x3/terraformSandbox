@@ -88,7 +88,7 @@ iframe {
     max-height: 70vh; 
     border-radius: 3px;
 }
-.zoneColors {
+.zoneColors, .altColors {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
