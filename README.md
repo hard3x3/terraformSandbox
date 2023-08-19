@@ -58,7 +58,7 @@ Placement is used in the Terraform Sandbox to determine chroma.^
 * 6666 > 10000: Pulse
 * Plagues can only be simulated when a hash value of the placement, string, and a nonce are greater than 0.9990.
 
-^In the original terraforms contract, placement has additional purposes, including the location of a parcel within the hypercastle. Placement selection of chroma was modified to permit additional customization in the sandbox and does not accurately reflect the artists original intent.
+^In the terraforms contract, placement has additional purposes, including the location of a parcel within the hypercastle. Placement selection of chroma was modified to permit additional customization in the sandbox and does not accurately reflect the artists original intent.
 
 ### AltColors [string[2]
 Alternative colors are an array of two (2) strings as CSS hex values (i.e. "#ffffff"), which provide additional color animation for plague parcels.
