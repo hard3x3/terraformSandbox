@@ -346,3 +346,29 @@ function exportData() {
   const base64Data = base64EncodeUnicode(JSON.stringify(obj));
 	openJSONInNewWindow(base64Data);
 }
+
+const swipeArea = document.getElementById('swipeArea');
+let initialX = null;
+
+swipeArea.addEventListener('touchstart', (event) => {
+initialX = event.touches[0].clientX;
+});
+
+swipeArea.addEventListener('touchmove', (event) => {
+if (initialX === null) {
+return;
+}
+
+const currentX = event.touches[0].clientX;
+const diffX = currentX - initialX;
+
+if (diffX > 0) {
+// Swipe right
+console.log('Swipe right');
+} else if (diffX < 0) {
+// Swipe left
+console.log('Swipe left');
+}
+
+initialX = null;
+});
