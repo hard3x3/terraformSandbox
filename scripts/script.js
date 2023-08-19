@@ -347,7 +347,7 @@ function exportData() {
 	openJSONInNewWindow(base64Data);
 }
 
-const swipeArea = document.getElementById('swipeArea');
+const swipeArea = document.getElementsByClassName('button-wrapper')[0];
 let initialX = null;
 
 swipeArea.addEventListener('touchstart', (event) => {
@@ -364,10 +364,10 @@ const diffX = currentX - initialX;
 
 if (diffX > 0) {
 // Swipe right
-console.log('Swipe right');
+openModal()
 } else if (diffX < 0) {
 // Swipe left
-console.log('Swipe left');
+randomDream();
 }
 
 initialX = null;
