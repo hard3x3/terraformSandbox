@@ -39,6 +39,9 @@ body {
     display:none;
 }
 .export {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: #f4f4f4;
     border: none;
     width: 100%;
@@ -86,6 +89,9 @@ iframe {
     border-radius: 3px;
 }
 .zoneColors {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width:30px; 
 }
 ::-webkit-scrollbar {
