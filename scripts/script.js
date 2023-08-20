@@ -10,7 +10,7 @@ function closeModal() {
 
 window.onload = function() {
 	randomDream();
-	alert("left-click/swipe: random\nright-click/swipe: menu")
+	alert("▚ ⍝ ⩎ ▟ ▙ ◍ ✗\ncreate custom terraform parcels\nleft-click/swipe: ???\nright-click/swipe: [MENU]")
 }
 
 window.oncontextmenu = function () {
