@@ -10,6 +10,7 @@ function closeModal() {
 
 window.onload = function() {
 	randomDream();
+	alert("left-click/swipe: random\nright-click/swipe: menu")
 }
 
 window.oncontextmenu = function () {
