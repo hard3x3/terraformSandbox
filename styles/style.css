@@ -46,6 +46,7 @@ body {
     border: none;
     width: 100%;
     text-align: right;
+    color: black;
 }
 .form-input {
     display: block;
