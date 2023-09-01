@@ -65,7 +65,7 @@ Alternative colors are an array of two (2) strings as CSS hex values (i.e. "#fff
 
 ## Addresses
 
-arweave: [AihZmVjdtFhnyjkrejfhN2Ve1FUp505RegoVx75fN6I](https://aiuftgky3w2fqz6khevxun7bg5sv5vcvfhtu4ul2bik4pps7g6ra.arweave.net/AihZmVjdtFhnyjkrejfhN2Ve1FUp505RegoVx75fN6I)
+arweave: [uAhaM7DI9GkjbBUONT48AG2bEbagIHZr54Rpq-yQFt4](https://xaefum5qzd2gsi3mcuhdkpr4abwzwenwuaqhm27hqru2x3eqc3pa.arweave.net/uAhaM7DI9GkjbBUONT48AG2bEbagIHZr54Rpq-yQFt4)
 
 terraformSVG: [0x49e0872d6b0758f70c86b29fce306aad66b3e391](https://etherscan.io/address/0x49e0872d6b0758f70c86b29fce306aad66b3e391#code)
 
