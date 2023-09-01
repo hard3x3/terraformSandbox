@@ -40,7 +40,7 @@ The seed has multiple purposes determining the animation distortion, speed of pa
 Zone colors are an array of ten (10) strings as CSS hex values (i.e. "#ffffff"), where the first 9 colors align to characters and the 10th is the parcel background.
 
 ### Canvas [uint256[]]
-Also known as a height map, this is an array consisting of 16 values containing a number of 64 digits in length. You can export an example of a canvas from [enter dream](www.enterdream.xyz).
+Also known as a height map, this is an array consisting of 16 values containing a number of 64 digits in length. You can export an example of a canvas from [enter dream](https://www.enterdream.xyz).
 
 ### Charset [string[9]]
 The character set is an array of nine (9) strings each containing a single character that appear on the parcel.
